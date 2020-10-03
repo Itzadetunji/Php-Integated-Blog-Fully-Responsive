@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2020 at 05:58 PM
+-- Generation Time: Oct 03, 2020 at 07:07 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -38,6 +38,13 @@ CREATE TABLE `admins` (
   `aimage` varchar(60) NOT NULL DEFAULT 'avatar.png',
   `addedby` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `datetime`, `username`, `password`, `aname`, `aheadline`, `abio`, `aimage`, `addedby`) VALUES
+(1, 'October-03-2019 23:54:07', 'itzadetunji', '1234', '', '', 'Adetunji Adeyinka is a developer and web developer with the great passion for building beautiful new Web applications and websites from scratch. He has been working as a Freelancer since 2017.He has designed various websites for many companies. Adetunji has a lot of certificates from various companies for his outstanding work for them. You can read his full portfolio on his website at adeyinka.000webhostapp.com', '02-small.jpg', 'sql');
 
 -- --------------------------------------------------------
 
@@ -97,7 +104,7 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `datetime`, `title`, `category`, `author`, `image`, `post`) VALUES
-(1, 'October-03-2020 16:58:09', 'Computer', 'Technology', 'jazeb', 'export4.png', 'This is just a test for you');
+(1, 'October-03-2020 16:58:09', 'Computer', 'Technology', 'itzadetunji', 'export4.png', 'This is just a test for you');
 
 --
 -- Indexes for dumped tables
@@ -136,7 +143,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `category`
